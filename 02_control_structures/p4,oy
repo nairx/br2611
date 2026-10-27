@@ -1,0 +1,42 @@
+numbers = [3,5,6,5]
+# print(numbers)
+# print(numbers[0])
+# print(numbers[1:4])
+# print(numbers[-1])
+# for number in numbers:
+#     print(number,end=" ")
+# numbers.append(9)
+# print(numbers)
+# numbers.extend([10,4,7])
+# print(numbers)
+
+# print(numbers.index(5))
+# print(numbers.count(5))
+
+# numbers.pop()
+# print(numbers)
+
+# numbers.pop(1)
+# print(numbers)
+
+# numbers.clear()
+# print(numbers)
+
+# numbers[0] = 99
+# print(numbers)
+
+# print(len(numbers))
+
+# print(max(numbers))
+
+
+
+
+# score = [3,5,6,5]
+
+# numbers.extend(score)
+# print(numbers)
+
+
+t = tuple(numbers)
+print(t)
