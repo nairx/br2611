@@ -12,6 +12,7 @@ def log_activity(fnc):
         return result
     return wrapper
 
+
 @login_required
 @log_activity
 def view_profile():
