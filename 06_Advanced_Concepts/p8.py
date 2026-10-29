@@ -10,7 +10,6 @@ e = Employee("John",21)
 e.display()
 
 
-
 # class Employee:
 #     def display(self):
 #         print("Employee Details")
