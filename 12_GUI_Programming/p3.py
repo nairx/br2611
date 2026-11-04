@@ -6,8 +6,13 @@ root.geometry("800x400")
 root.title("My Application")
 
 menu_bar = Menu(root) 
+
+def new_file():
+    print("New File")
+
+
 file_menu = Menu(menu_bar,tearoff=0)
-file_menu.add_command(label="New")
+file_menu.add_command(label="New",command=new_file)
 file_menu.add_command(label="Open")
 recent_menu = Menu(file_menu,tearoff=0)
 recent_menu.add_command(label="file1.txt")
@@ -21,9 +26,10 @@ edit_menu.add_command(label="Cut")
 edit_menu.add_command(label="Copy")
 edit_menu.add_command(label="Paste")
 
-file_menu.add_cascade(label="Recent",menu=recent_menu)
+
 
 menu_bar.add_cascade(label="File",menu=file_menu)
+file_menu.add_cascade(label="Recent",menu=recent_menu)
 menu_bar.add_cascade(label="Edit",menu=edit_menu)
 root.config(menu=menu_bar)
 root.mainloop()
