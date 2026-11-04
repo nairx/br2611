@@ -6,8 +6,12 @@ server.listen()
 print("Waiting for client....")
 client,address = server.accept()
 print("Client Connected: ",address)
-message = client.recv(1024).decode()
-print(message)
-client.sendall("Server: Hi!".encode())
+while True:
+    message = client.recv(1024).decode()
+    if message=="bye":
+        break
+    print("Client: ",message)
+    response = input("Server: ")
+    client.sendall(response.encode())
 client.close() 
 server.close()
